@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  server:
+    image: timebruce/galdus:welcome-to-docker@sha256:24d3b8d711efb7b77acb89d31d2b8327821811485ee2bd5b017b3ac55ac66fd4
+    network_mode: host
+    #volumes:
+      #- ${APP_DATA_DIR}/data:/config
+    restart: on-failure
+    stop_grace_period: 1m
+    ports:
+      - "3000:3000"
+
+#services:
+  #app_proxy:
+    #environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      #APP_HOST: galdus_server_1
+      #APP_PORT: 665
+      #PROXY_AUTH_ADD: "false"
+
+  #server:
+    #image: timebruce/galdus:welcome-to-docker@sha256:f79f8b2f171623f6dc7d4df0fe96b21dda8ed930cd3eb837cd044c2cbd7889ab
+    #restart: on-failure
+    #environment:
+      #PORT: 3000
