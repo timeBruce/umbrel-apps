@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+  #db: 
+  #  image: mysql:latest
+  #  environment:
+  #    - MYSQL_DATABASE=php_docker
+  #    - MYSQL_USER=php_docker
+  #    - MYSQL_PASSWORD=password # this should live in a env var
+  #    - MYSQL_ALLOW_EMPTY_PASSWORD=1 # equivalent to True
+  #  volumes:
+  #    - ${APP_DATA_DIR}/db:/docker-entrypoint-initdb.d # this is how we persist a sql db even when container stops
+  #www:
+  #  image: php:apache
+  #  volumes:
+  #    - ${APP_DATA_DIR}/:/var/www/html # sync the current dir on local machine to the dir of container
+  #  ports:
+  #    - 80:80
+  #    - 443:443 # for future ssl traffic
+  server:
+    image: timebruce/hellotimes:galdushtml
+    #@sha256:a14eb934a008c01c3d6fee788bf713eefecd07ad3a1dbba0f7be868934d2b578
+    network_mode: host
+    ports:
+      - 3000:3000
+    restart: on-failure

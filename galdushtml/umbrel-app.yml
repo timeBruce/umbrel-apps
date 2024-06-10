@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: galdushtml
+category: automation
+name: Galdus
+icon: https://i.imgur.com/X0BNbwk.jpg
+version: "2024.06.02.01"
+tagline: The Galdus App
+description: >-
+  Un progetto d'Esame 2024
+developer: Brusa
+website: https://galdus.it
+dependencies: []
+repo: https://github.com/timebruce/ExamProject
+support: 
+port: 3000
+gallery:
+ - /img/background.png
+ - /img/background.png
+ - /img/background.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+releaseNotes: >-
+  First
+submitter: Galdus
+submission: https://galdus.it
