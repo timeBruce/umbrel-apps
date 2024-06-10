@@ -3,7 +3,7 @@ id: galdus-html
 category: automation
 name: Galdus
 icon: https://i.imgur.com/X0BNbwk.jpg
-version: "2024.06.02.01"
+version: "2024.06.02.02"
 tagline: The Galdus App
 description: >-
   Un progetto d'Esame 2024
@@ -22,6 +22,6 @@ defaultUsername: ""
 defaultPassword: ""
 torOnly: false
 releaseNotes: >-
-  First
+  Galdus!
 submitter: Galdus
 submission: https://galdus.it
